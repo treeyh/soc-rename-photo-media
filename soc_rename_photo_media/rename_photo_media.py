@@ -8,13 +8,13 @@ import time
 from datetime import date, datetime, timedelta
 import multiprocessing
 import traceback
-
-import config
-
 import exifread
+
+from soc_rename_photo_media import config
+
 from pymediainfo import MediaInfo
 
-from utils import log_utils, file_utils
+from soc_rename_photo_media.utils import log_utils, file_utils
 
 
 def get_photo_create_time(file_path):
@@ -179,8 +179,8 @@ def start():
   init()
 
 
-_file_folder = 'F:\\202107贵州'
-_pre_name = '202107贵州'
+_file_folder = 'D:\\data\\照片\\119ND750'
+_pre_name = '202306天天幼儿园毕业'
 _logger = None
 _cpu_count = 1
 _date_format = '%Y-%m-%d %H:%M:%S'
